@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu desenvolvimento</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <nav class="header-nav">
+            <a href="index.html">
+                <img src="imagens/perfil.png" alt="foto do perfil" width="100" height="100">
+            </a>
+                
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="graduacao.html">Graduação</a></li>
+                <li><a href="tipografia.html">Curso: Tipografia</a></li>
+                <li><a href="cards.html">Curso: Cards</a></li>
+                <li><a href="listas.html">Curso: Listas</a></li>
+                <li><a href="formulario.html">Curso: Formulário</a></li>
+                <li><a href="botoes.html">Curso: Botões</a></li>
+                <li><a href="tabelas.html">Curso: Tabelas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <main class="main">
+        <h1 class="title">Meu desenvolvimento</h1>
+
+        <article class="highlight">
+            <h2>Formulários</h2>
+            <p>Formulários são componentes essenciais em páginas e aplicações web, utilizados para coletar dados dos usuários. Eles permitem a interação entre o usuário e o sistema, possibilitando a inserção de informações que podem ser processadas, armazenadas e utilizadas de diversas maneiras.</p>
+        </article>
+
+        <section class="content-form">
+            <div>
+                <form action="#" class="formulario">
+                    <fieldset>
+                        <legend>Ficha de Inscrição</legend>
+                
+                        <div class="form-group">
+                            <label for="name">Nome completo</label>
+                            <input type="text" name="nome" id="name" required maxlength="75" placeholder="Informe seu nome">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" required maxlength="75" placeholder="Informe seu nome">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="birth">Data de nascimento</label>
+                            <input type="date" name="nascimento" id="birth" required min="1900-01-01" max="2024-01-01">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="phone">Telefone para contato</label>
+                            <input type="tel" name="telefone" id="phone" placeholder="Digite seu telefone">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="qtd-l">Com quantas linguagens de programação você tem experiência?</label>
+                            <input type="number" name="qtd-linguagens" id="qtd-l" min="0" max="100">
+                        </div>
+                
+                        <div class="form-group">
+                            <label>Está trabalhando atualmente?</label>
+                            <input type="radio" name="trabalhando" value="sim"> Sim
+                            <input type="radio" name="trabalhando" value="nao"> Não
+                        </div>
+                
+                        <div class="form-group">
+                            <label>Qual linguagem de programação você tem experiência?</label>
+                            <input type="checkbox" name="conhecimentos" value="python">Python
+                            <input type="checkbox" name="conhecimentos" value="javascript">Javascript
+                            <input type="checkbox" name="conhecimentos" value="java">Java
+                            <input type="checkbox" name="conhecimentos" value="c#">C#
+                            <input type="checkbox" name="conhecimentos" value="c++">C++
+                            <input type="checkbox" name="conhecimentos" value="ruby">Ruby
+                            <input type="checkbox" name="conhecimentos" value="php">PHP
+                            <input type="checkbox" name="conhecimentos" value="swift">Swift
+                            <input type="checkbox" name="conhecimentos" value="typescript">TypeScript
+                            <input type="checkbox" name="conhecimentos" value="go">Go
+                            <input type="checkbox" name="conhecimentos" value="outras">Outras
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="english">Nivel de inglês</label>
+                            <select name="nivel-ingles" id="english" required>
+                                <option value=""></option>
+                                <optgroup label="Nivel A">
+                                    <option value="iniciante">Iniciante</option>
+                                    <option value="basico">Básico</option>
+                                </optgroup>
+                                <optgroup label="Nivel B">
+                                    <option value="intermediário">Intermediário</option>
+                                    <option value="avançado">Avançado</option>
+                                </optgroup>
+                                <optgroup label="Nivel C">
+                                    <option value="fluente">Fluente</option>
+                                    <option value="nativo">Nativo</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="cargos">Cargo pretendido:</label>
+                            <input type="text" list="cargos" placeholder="Escolha uma opção">
+                            <datalist id="cargos">
+                                <option value="Desenvolvedor Front-End">
+                                <option value="Desenvolvedor Back-End">
+                                <option value="Desenvolvedor Full Stack">
+                                <option value="Engenheiro de Software">
+                                <option value="Engenheiro de Dados">
+                                <option value="Cientista de Dados">
+                                <option value="Analista de Dados">
+                                <option value="Administrador de Banco de Dados">
+                                <option value="Arquiteto de Software">
+                                <option value="Especialista em DevOps">
+                                <option value="Gerente de TI">
+                                <option value="Analista de Sistemas">
+                                <option value="Analista de Segurança da Informação">
+                                <option value="Consultor de TI">
+                                <option value="Analista de Suporte Técnico">
+                                <option value="Administrador de Redes">
+                                <option value="Engenheiro de Redes">
+                                <option value="Analista de Qualidade (QA)">
+                                <option value="Testador de Software">
+                                <option value="Engenheiro de Machine Learning">
+                                <option value="Desenvolvedor de Aplicativos Móveis">
+                                <option value="Desenvolvedor de Jogos">
+                                <option value="Desenvolvedor de Inteligência Artificial">
+                                <option value="Engenheiro de Cloud Computing">
+                                <option value="Engenheiro de Infraestrutura">
+                                <option value="Analista de Negócios em TI">
+                                <option value="Especialista em Big Data">
+                                <option value="Especialista em IoT (Internet das Coisas)">
+                                <option value="Analista de Business Intelligence (BI)">
+                                <option value="Engenheiro de Automação">
+                            </datalist>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="link">LinkedIn:</label>
+                            <input type="url" name="linkedin" id="link" placeholder="Digite a URL do seu LinkedIn">
+                        </div>
+                
+                        <div class="form-group">
+                            <legend>Fale sobre você:</legend>
+                            <textarea name="resumo" id="resume" cols="80" rows="10" style="resize: none;"></textarea>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="curriculo">Anexe seu curriculo</label>
+                            <input type="file" name="arquivo" id="curriculo">
+                        </div>
+                
+                        <fieldset>
+                            <legend>Termos de condições:</legend>
+                            <textarea name="termos" id="terms" cols="100" rows="10" disabled style="resize: none;">
+Termos e Condições
+    1. Aceitação dos Termos
+            Ao acessar e utilizar este site, você concorda com os termos e condições aqui descritos.
+    2. Uso do Site
+            Você concorda em usar este site apenas para fins legais e de maneira que não infrinja os direitos de terceiros ou restrinja o uso e aproveitamento do site por terceiros.
+    3. Propriedade Intelectual
+            Todo o conteúdo deste site, incluindo textos, gráficos, logotipos e imagens, é de propriedade exclusiva da empresa e está protegido por leis de direitos autorais.
+    4. Limitação de Responsabilidade
+            A empresa não será responsável por quaisquer danos diretos, indiretos, incidentais ou consequenciais resultantes do uso ou da incapacidade de uso deste site.
+    5. Alterações nos Termos
+            A empresa se reserva o direito de modificar estes termos a qualquer momento, sendo sua responsabilidade revisá-los periodicamente.
+    6. Lei Aplicável
+            Estes termos são regidos pelas leis do país e quaisquer disputas serão resolvidas nos tribunais competentes.
+    7. Contato
+            Para mais informações ou dúvidas sobre os termos, entre em contato conosco através do e-mail: suporte@empresa.com
+                            </textarea>
+                        </fieldset>
+                
+                        <div class="form-group">
+                            <input type="radio">Li e concordo com os termos acima
+                        </div>
+                
+                        <div class="form-group">
+                            <button type="reset" class="btn clean">Limpar Campos</button>
+                        </div>
+                
+                        <div class="form-group">
+                            <button type="submit" class="btn send">Enviar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
